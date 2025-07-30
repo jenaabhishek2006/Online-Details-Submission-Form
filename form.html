@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        *{ padding: 0px;
+            margin: 0px;
+            box-sizing: border-box }
+
+        html,body{ height: 100%; }
+
+        .container{ display: flex;
+                    height: 100vh } 
+        
+        .leftside{ flex: 1;  
+               background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );               
+               color: whitesmoke;
+               font-family: Bahnschrift SemiBold;
+               text-align: center;
+               padding-top: 20%;}  
+                
+        .rightside{ flex: 1;  
+                background-color: #ffffff; }
+        
+        .img{ max-width: 80%;
+              height: auto;
+              padding-top: 20%; }
+        
+        .alreadysigned{ text-align: right;
+                        padding-right: 2%; }
+            
+        .entry{ font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+                padding-top: 1%;
+                font-size: large;
+                width: 100%;               
+              }
+
+        .label{ font-family: Bahnschrift;
+                padding-top: 3%;
+              }
+
+        form{ border: 1px solid white;
+              display: block;
+              padding-left: 10%;
+              padding-right: 1%;
+              padding-bottom: 1%;
+              padding-top: 1%;
+              font-size: large;
+              max-width: 95%;
+            }
+
+        .btn{  
+              font-family: Bahnschrift; 
+              width: 100%;
+              height: 50px;
+              background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );               
+              color: whitesmoke;
+              border-radius: 5px;
+              font-size: large;
+            }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftside">
+            <h1> Welcome to Student SignUp Page </h1><br>
+            <p> Enter your details in order to get the display in another webpage </p>
+        </div>
+
+        <div class="rightside">
+            <p class="alreadysigned" style="font-family: Bahnschrift;">Already have signed? <u>SignIn Here</u> </p>  
+            <form action="http://127.0.0.1:5000/result" method="POST">
+                <p class="label">Name:</p>
+                <input class="entry" type="text" name="Name" placeholder="Enter your full-name">
+                <p class="label">Class:</p>
+                <input class="entry" type="text" name="Class" placeholder="Enter your class">
+                <p class="label">Java:</p>
+                <input class="entry" type="number" name="Java" placeholder="Enter your Java marks">
+                <p class="label">Python:</p>
+                <input class="entry" type="number" name="Python" placeholder="Enter your Python marks">
+                <p class="label">HTML:</p>
+                <input class="entry" type="number" name="HTML" placeholder="Enter your HTML marks">
+                <p class="label">CSS:</p>
+                <input class="entry" type="number" name="CSS" placeholder="Enter your CSS marks"><br><br>
+
+                
+                <input class="btn" type="submit" value="Submit"><br><br>
+                <input class="btn" type="reset" value="Reset">
+                
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
