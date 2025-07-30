@@ -12,5 +12,5 @@ This is a simple web application built with **Flask** that allows users (student
 
 ---
 
-## 📁 Project Structure
+
 
